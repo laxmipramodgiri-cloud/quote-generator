@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.quote-card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#author {
+    color: #666;
+    margin-bottom: 28px;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#newQuoteBtn {
+    background: #667eea;
+    color: white;
+}
+
+#favoriteBtn {
+    background: #ff5c7a;
+    color: white;
+}
+
+#copyBtn {
+    background: #333;
+    color: white;
+}
+
+.history-section {
+    margin-top: 35px;
+}
+
+.history-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.history-item p {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.history-item strong {
+    color: #666;
+}
+
+.history-buttons {
+    margin-top: 12px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 14px;
+    font-size: 13px;
+}
+
+.empty {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #quote {
+        font-size: 21px;
+    }
+
+    .quote-card {
+        padding: 25px 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
